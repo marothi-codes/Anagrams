@@ -1,7 +1,11 @@
 ﻿/// <summary>
-/// Checks whether two strings are Anagrams of each other
-/// i.e., they contain the exact characters irrespective of order
+/// Determines whether two input strings are anagrams of each other.
 /// </summary>
+/// <param name="stringA">The first string to compare.</param>
+/// <param name="stringB">The second string to compare.</param>
+/// <param name="argumentNullException">The exception to throw if either input string is null or whitespace.</param>
+/// <returns>Returns true if the input strings are anagrams (i.e., contain the exact same characters), and false otherwise.</returns>
+/// <exception cref="Exception">Thrown when either input string is null or whitespace.</exception>
 static bool IsAnagram(string stringA, string stringB, Exception argumentNullException)
 {
     // Check if the input strings are null or whitespace
